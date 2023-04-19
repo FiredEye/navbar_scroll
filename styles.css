@@ -1,0 +1,134 @@
+/* Hide the scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Style the thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Hover styles */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    position:fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0 20px;
+    width: 100%;
+    height: 72px;
+    background:#ffffff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+.hamburger {
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    display: block;
+    position: absolute;
+    height: 2.5px;
+    width: 100%;
+    background: #000;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: all 0.2s ease-out;
+  }
+  
+  .hamburger span:nth-child(1) {
+    top: 0px;
+  }
+  
+  .hamburger span:nth-child(2), .hamburger span:nth-child(3) {
+    top: 11px;
+  }
+  
+  .hamburger span:nth-child(3) {
+    top: 22px;
+  }
+
+nav a{
+    color: inherit;
+    text-decoration: none;
+    transition:0.3s;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+nav a.active{
+    color:#8f44fd;
+}
+section{
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+
+}
+section h1,section p{
+    text-align: center;
+    font-weight: 750;
+    
+}
+section h1{
+    font-size: 24px;
+}
+section p{
+    font-size: 16px;
+}
+section#home{
+    color:rgb(40, 40, 43);
+}
+section#about{
+    background-color: rgb(253, 247, 240);
+    color:  rgb(40, 40, 43);
+}
+section#work{
+    background-color: rgb(40, 40, 43);
+    color:whitesmoke
+}
+#back-to-top-btn {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    background-color:  #FA5F55 ;
+    color: whitesmoke;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #back-to-top-btn:hover {
+    background-color: #f32618;
+  }
+  
